@@ -1,0 +1,402 @@
+/* 
+ * Sri Lanka Ice Cream Shop - Galle
+ * Custom CSS Styles
+ */
+
+ :root {
+    /* Color palette - inspired by Sri Lankan tropical colors and ice cream */
+    --primary: #0077b6;       /* Deep blue like ocean around Galle */
+    --primary-light: #90e0ef; /* Light blue */
+    --secondary: #ff9e00;     /* Golden/orange - vibrant Sri Lankan color */
+    --accent: #ff5a5f;        /* Strawberry ice cream color */
+    --accent-light: #ffccd5;  /* Light pink */
+    --success: #57cc99;       /* Mint ice cream color */
+    --light: #f8f9fa;         /* Light background */
+    --dark: #343a40;          /* Dark text color */
+    --white: #ffffff;
+    --cream: #fff1e6;         /* Cream/vanilla color */
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    background-image: linear-gradient(120deg, var(--cream) 0%, var(--light) 100%);
+    min-height: 100vh;
+  }
+  
+  /* Header and Brand Styling */
+  .card-header {
+    background: linear-gradient(135deg, var(--primary) 0%, #0096c7 100%);
+    border-bottom: 0;
+    padding: 1.5rem 1rem;
+  }
+  
+  .card-header h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header p {
+    opacity: 0.9;
+    margin-bottom: 0;
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  /* Form Controls */
+  .form-control {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+    background-color: var(--white);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 119, 182, 0.25);
+  }
+  
+  .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: #005f92;
+    border-color: #005f92;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e68a00;
+    border-color: #e68a00;
+  }
+  
+  .btn-success {
+    background-color: var(--success);
+    border-color: var(--success);
+  }
+  
+  /* Links */
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+  }
+  
+  /* Alerts and Messages */
+  .alert {
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .alert-danger {
+    background-color: var(--accent-light);
+    border-color: var(--accent);
+    color: #721c24;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: var(--success);
+    color: #155724;
+  }
+  
+  /* Header and Navigation */
+  .navbar {
+    background-color: var(--primary);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-nav .nav-link {
+    color: var(--white);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-nav .active > .nav-link {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Product Cards */
+  .product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .product-price {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .product-category {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Ice Cream Theme Decorations */
+  .ice-cream-bg {
+    position: relative;
+  }
+  
+  .ice-cream-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(90deg, 
+      var(--primary) 0%, 
+      var(--primary) 20%, 
+      var(--secondary) 20%, 
+      var(--secondary) 40%, 
+      var(--accent) 40%, 
+      var(--accent) 60%, 
+      var(--success) 60%, 
+      var(--success) 80%, 
+      var(--primary-light) 80%, 
+      var(--primary-light) 100%
+    );
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer h5 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  footer a {
+    color: var(--white);
+    opacity: 0.8;
+  }
+  
+  footer a:hover {
+    color: var(--white);
+    opacity: 1;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .card-body {
+      padding: 1.5rem;
+    }
+    
+    .card-header h2 {
+      font-size: 1.5rem;
+    }
+    
+    .btn {
+      padding: 0.6rem 1.2rem;
+    }
+  }
+  
+  /* Loading Spinner */
+  .spinner-border {
+    color: var(--primary);
+  }
+  
+  /* Order Status Colors */
+  .status-pending {
+    background-color: #ffd166;
+    color: #222;
+  }
+  
+  .status-processing {
+    background-color: #118ab2;
+    color: white;
+  }
+  
+  .status-completed {
+    background-color: var(--success);
+    color: white;
+  }
+  
+  .status-cancelled {
+    background-color: #ef476f;
+    color: white;
+  }
+  
+  /* Additional Classes for Dashboard */
+  .dashboard-stat {
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .dashboard-stat-primary {
+    border-left: 4px solid var(--primary);
+  }
+  
+  .dashboard-stat-secondary {
+    border-left: 4px solid var(--secondary);
+  }
+  
+  .dashboard-stat-accent {
+    border-left: 4px solid var(--accent);
+  }
+  
+  .dashboard-stat-success {
+    border-left: 4px solid var(--success);
+  }
+  
+  .dashboard-stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0;
+  }
+  
+  .dashboard-stat-title {
+    color: #6c757d;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
+  
+  /* Animation for loading elements */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  /* Special offers ribbon */
+  .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+  }
+  
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 8px 0;
+    background-color: var(--accent);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .ribbon-top-right {
+    top: -10px;
+    right: -10px;
+  }
+  
+  .ribbon-top-right span {
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
